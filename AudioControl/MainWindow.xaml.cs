@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,10 +24,6 @@ namespace AudioControl
         {
             InitializeComponent();
         }
-
-        public void SetApplicationVolume(string applicationName, double level)
-        {
-            Process.Start("nircmd.exe", "changeappvolume " + applicationName + " " + level);
-        }
+        
     }
 }
